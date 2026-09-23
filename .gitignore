@@ -1,0 +1,16 @@
+# Python and local credentials
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+ENV/
+
+# Editor and ADK runtime data
+.idea/
+.vscode/
+.adk/
+*.db
+*.sqlite3

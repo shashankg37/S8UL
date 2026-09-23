@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SBUL Rocket — Desktop Pet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Mono:wght@400;500&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="desktop-shell">
+      <nav class="topbar"><div class="brand"><span>SBUL</span> ROCKET</div><div class="live"><i></i> PET ONLINE</div></nav>
+      <section class="scene-wrap">
+        <canvas id="pet-canvas" aria-label="Interactive 3D SBUL Rocket pet"></canvas>
+        <div class="stars"></div>
+        <div class="scene-copy">
+          <p class="eyebrow">YOUR COMPANION. YOUR CREW.</p>
+          <h1>MEET<br /><em>ROCKET.</em></h1>
+          <p class="status" id="statusText">Ready for the next mission.</p>
+        </div>
+        <div class="speech" id="speech">Yo! Ready to crush the day? <span>✦</span></div>
+        <div class="drag-tip">DRAG TO LOOK AROUND</div>
+        <div class="orbit"><span></span><span></span><span></span></div>
+      </section>
+      <section class="control-deck">
+        <div class="panel actions"><p class="label">HOW’S ROCKET?</p><div class="action-grid">
+          <button data-action="focus"><b>✦</b><span>FOCUS<br />MODE</span></button>
+          <button data-action="rest"><b>☾</b><span>STAY<br />CHARGED</span></button>
+          <button data-action="break"><b>⚡</b><span>TAKE A<br />BREAK</span></button>
+          <button data-action="cheer"><b>✹</b><span>CHEER<br />ME UP</span></button>
+        </div></div>
+        <div class="panel mood"><p class="label">EXPRESSIONS</p><div class="moods">
+          <button class="active" data-mood="happy">☺<small>HAPPY</small></button><button data-mood="excited">✦<small>EXCITED</small></button><button data-mood="focused">•_•<small>FOCUSED</small></button><button data-mood="sleepy">-ᴗ-<small>SLEEPY</small></button>
+        </div></div>
+        <div class="panel stats"><p class="label">MISSION LOG</p><div><span>FUEL</span><strong id="fuel">86%</strong></div><div class="meter"><i id="fuelBar"></i></div><div><span>MOOD</span><strong id="moodValue">HAPPY</strong></div><p class="hint">Tap Rocket or select an action.</p></div>
+      </section>
+      <footer><span>SBUL ROCKET / DESKTOP PET v1.0</span><span id="clock"></span></footer>
+    </main>
+    <script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

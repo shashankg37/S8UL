@@ -1,0 +1,23 @@
+; Rocket desktop pet — Godot 4
+config_version=5
+
+[application]
+config/name="Rocket Desktop Pet"
+run/main_scene="res://Main.tscn"
+config/features=PackedStringArray("4.0", "GL Compatibility")
+
+[display]
+window/size/viewport_width=620
+window/size/viewport_height=720
+window/size/window_width_override=620
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/size/transparent=true
+window/size/borderless=true
+window/size/always_on_top=true
+window/per_pixel_transparency/allowed=true
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0, 0, 0, 0)
